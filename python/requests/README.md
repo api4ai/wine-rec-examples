@@ -1,6 +1,6 @@
 # API4AI wine recognition
 
-This directory contains a minimalistic sample that sends requests to the API4AI Brand Recognition API.
+This directory contains a minimalistic sample that sends requests to the API4AI Wine Recognition API.
 The sample is implemented in `python` using [requests](https://pypi.org/project/requests/) module.
 
 
