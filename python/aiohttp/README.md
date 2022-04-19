@@ -1,6 +1,6 @@
 # API4AI wine recognition sample
 
-TThis directory contains a minimalistic sample that sends requests to the API4AI wine recognition API.
+TThis directory contains a minimalistic sample that sends requests to the API4AI Wine Recognition API.
 The sample is implemented in  `python` using [aiohttp](https://pypi.org/project/aiohttp/) module.
 
 
