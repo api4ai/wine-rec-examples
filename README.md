@@ -24,7 +24,7 @@ API4AI is cloud-native computer vision & AI platform for startups, enterprises a
 The Wine Label Recognition API takes 3-channel RGB images as inputs and gives you information about the brand of wine and what wine type it is (Cabernet Sauvignon / Merlot / Rosé / etc.). It is easily integrated in mobile applications which implies a wide range of possible uses, from integration into applications of popular retail malls to specialty wine boutiques.
 
 <div align="center">
-<img width="600" src="https://storage.googleapis.com/api4ai-static/rapidapi/wine_recognition_1.jpg"/>
+<img width="600" src="https://storage.googleapis.com/api4ai-static/visuals/wine_recognition_1.jpg"/>
 </div>
 
 
