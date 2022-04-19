@@ -35,7 +35,7 @@ OPTIONS = {
 
 async def main():
     """Entry point."""
-    image = sys.argv[1] if len(sys.argv) > 1 else 'https://storage.googleapis.com/api4ai-static/samples/wine-3.jpg'  # noqa
+    image = sys.argv[1] if len(sys.argv) > 1 else 'https://storage.googleapis.com/api4ai-static/samples/wine-3.jpg'
 
     # response = None
     async with aiohttp.ClientSession() as session:
@@ -47,7 +47,7 @@ async def main():
             data = {'image': open(image, 'rb')}
         # Make request.
         async with session.post(OPTIONS[MODE]['url'],
-                                data=data,  # noqa
+                                data=data,
                                 headers=OPTIONS[MODE]['headers']) as response:
             resp_json = await response.json()
             resp_text = await response.text()
