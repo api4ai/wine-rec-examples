@@ -55,13 +55,9 @@ async def main():
         # Print raw response.
         print(f'💬 Raw response:\n{resp_text}\n')
 
-        top5 = sorted(
-            resp_json['results'][0]['entities'][0]['classes'].items(),
-            key=lambda i: -i[1]
-        )[:5]
-
-        # # Parse response and print top5 recognized wine labels.
-        print(f'💬 Top 5 classes:\n{top5}\n')
+        # Parse response and probabilities.
+        probs = resp_json['results'][0]['entities'][0]['classes']
+        print(f'💬 Probabilities:\n{probs}')
 
 
 if __name__ == '__main__':

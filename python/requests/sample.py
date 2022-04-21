@@ -58,10 +58,6 @@ if __name__ == '__main__':
     # Print raw response.
     print(f'💬 Raw response:\n{response.text}\n')
 
-    top5 = sorted(
-        response.json()['results'][0]['entities'][0]['classes'].items(),
-        key=lambda i: -i[1]
-    )[:5]
-
-    # # Parse response and print top5 recognized wine labels.
-    print(f'💬 Top 5 classes:\n{top5}\n')
+    # Parse response and probabilities.
+    probs = response.json()['results'][0]['entities'][0]['classes']
+    print(f'💬 Probabilities:\n{probs}')
